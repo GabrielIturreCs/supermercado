@@ -1,0 +1,34 @@
+.angular/cache/
+# Ignorar node_modules, dist y .angular en cualquier subcarpeta
+**/node_modules/
+**/dist/
+**/.angular/
+.env
+# IDEs y editores
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+# Logs
+*.log
+# OS
+Thumbs.db
+.DS_Store
+# Angular build y cache extra
+**/out-tsc/
+**/coverage/
+tmp/
+temp/
+/.sass-cache
+/.cache
+/.npm/
+/.yarn/
+/.pnp*
+/.eslintcache
+/.parcel-cache
+/.turbo/
+/.nx/
+/.firebase/
+firebase-debug.log
+firebase-debug.*.log
+/.env.*

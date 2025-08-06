@@ -1,0 +1,36 @@
+# Render Backend Service Configuration
+# Para usar este archivo:
+# 1. Ve a render.com dashboard
+# 2. Crear nuevo "Web Service"
+# 3. Conectar repositorio GitHub
+# 4. Configurar:
+
+# BUILD SETTINGS:
+# - Root Directory: backend
+# - Build Command: npm install
+# - Start Command: npm start
+
+# ENVIRONMENT VARIABLES:
+# - NODE_ENV: production
+# - MONGODB_URI: (tu string de conexión MongoDB)
+# - PORT: 10000 (Render asigna automáticamente)
+
+# URL ESPERADA:
+# https://supermercadobackend.onrender.com
+
+# CONFIGURACIÓN COMPLETA:
+services:
+  - type: web
+    name: supermercado-backend
+    env: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free
+    branch: main
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        generateValue: true

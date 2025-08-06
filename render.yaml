@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: supermercado-frontend
+    env: node
+    buildCommand: cd frontend && npm install && npm run build
+    startCommand: cd frontend && npm run start
+    rootDir: frontend
+    plan: free
+    branch: main
+    autoDeploy: true

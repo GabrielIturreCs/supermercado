@@ -3,6 +3,28 @@
     "@angular/animations": "^20.1.2",
     "@angular/cdk": "^20.1.2",
     "@angular/material": "^20.1.2",
+    "express": "^5.1.0",
     "jspdf-autotable": "^5.0.2"
-  }
+  },
+  "devDependencies": {
+    "@angular/cli": "^18.2.20"
+  },
+  "name": "supermeercadoapp",
+  "version": "1.0.0",
+  "main": "servidor-impresion.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielIturreCs/supermercado.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GabrielIturreCs/supermercado/issues"
+  },
+  "homepage": "https://github.com/GabrielIturreCs/supermercado#readme",
+  "description": ""
 }
